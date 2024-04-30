@@ -1,10 +1,10 @@
-import styled from "styled-components";
-import { auth, db, storage } from "../firebase"
-import { useEffect, useState } from "react";
-import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import { updateProfile } from "firebase/auth";
 import { collection, doc, getDocs, limit, orderBy, query, updateDoc, where } from "firebase/firestore";
+import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
+import { useEffect, useState } from "react";
+import styled from "styled-components";
 import Tweet from "../components/tweet";
+import { auth, db, storage } from "../firebase";
 
 
 const Wrapper = styled.div`
@@ -234,7 +234,8 @@ export default function Profile() {
             <AvatarInput onChange={onAvatarChange} id="avatar" type="file" accept="image/*" />
 
 
-            <Name onClick={onUpdateNickName}>{nickName + `(버튼 클릭시 변경)` ?? "Anonymous"}  </Name>
+            <Name onClick={onUpdateNickName}>{nickName ? `${nickName}(버튼 클릭시 변경)` : "Anonymous"}  </Name>
+
 
             {!isUpdateNickName ? null :
                 <Form onSubmit={onSubmit} >

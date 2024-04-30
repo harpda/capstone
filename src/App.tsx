@@ -1,17 +1,17 @@
+import { useEffect, useState } from "react"
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
-import Layout from "./components/layout"
-import Home from "./routes/home"
-import Profile from "./routes/profile"
-import Login from "./routes/login"
-import CreateAccount from "./routes/create_account"
 import styled, { createGlobalStyle } from "styled-components"
 import reset from "styled-reset"
-import { useEffect, useState } from "react"
+import Layout from "./components/layout"
 import LoadingScreen from "./components/loading_screen"
-import { auth } from "./firebase"
 import ProtectedRoute from "./components/protected_route"
-import Update from "./routes/update"
+import { auth } from "./firebase"
 import Chat from "./routes/chat"
+import CreateAccount from "./routes/create_account"
+import Home from "./routes/home"
+import Login from "./routes/login"
+import Profile from "./routes/profile"
+import Update from "./routes/update"
 
 //배열을 routes에 전달 
 const router = createBrowserRouter([
@@ -66,12 +66,6 @@ const GlobalStyles = createGlobalStyle`
 ${reset};
 *{
   box-sizing:border-box;
-}
-
-body{
-  background-color:black;
-  color:white;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 ::-webkit-scrollbar {
 display:none;
