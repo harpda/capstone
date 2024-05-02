@@ -4,7 +4,8 @@ import { auth } from "../firebase";
 import { Link, useNavigate } from "react-router-dom";
 import { FirebaseError } from "firebase/app";
 import { Form,Error, Input, Switcher, Title, Wrapper } from "../components/auth-components";
-import GithubButton from "../components/github-btn";
+import GithubButton from "../components/SocialLogin/github-btn";
+import GoogleBtn from "../components/SocialLogin/google_btn";
 
 // react로 form을 생성하는 걸 도와주는 패키지 
 
@@ -110,6 +111,7 @@ export default function CreateAccount() {
         </Switcher>
 
         <GithubButton/>
+        <GoogleBtn/>
     </Wrapper>
     )
 }

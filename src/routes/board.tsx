@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import PostTweeterForm from "../components/post_tweet_form";
-import Timeline from "../components/timeline";
+import PostTweeterForm from "../components/Board/post_tweet_form";
+import Timeline from "../components/Board/timeline";
 
 const Wrapper = styled.div`
 display:grid;

@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { ITweet } from "./timeline";
-import { auth, db, storage } from "../firebase";
+import { auth, db, storage } from "../../firebase";
 import { deleteDoc, doc } from "firebase/firestore";
 import { deleteObject, ref } from "firebase/storage";
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
 const Wrapper = styled.div`
  display: grid;

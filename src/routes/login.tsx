@@ -4,8 +4,8 @@ import { FirebaseError } from "firebase/app";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
 import { Form, Error, Input, Switcher, Title, Wrapper, MainTitle } from "../components/auth-components";
-import GithubButton from "../components/github-btn";
-import GoogleBtn from "../components/google_btn";
+import GithubButton from "../components/SocialLogin/github-btn";
+import GoogleBtn from "../components/SocialLogin/google_btn";
 
 // react로 form을 생성하는 걸 도와주는 패키지 
 

@@ -1,6 +1,6 @@
 
 import { useParams } from "react-router-dom";
-import TweetUpdate from "../components/tweet_update";
+import TweetUpdate from "../components/Board/tweet_update";
 import { useEffect, useState } from "react";
 
 export default function Update() {

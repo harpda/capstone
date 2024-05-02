@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import { updateProfile } from "firebase/auth";
 import { collection, doc, getDocs, limit, orderBy, query, updateDoc, where } from "firebase/firestore";
-import Tweet from "../components/tweet";
+import Tweet from "../components/Board/tweet";
 import Diary from "../components/Diary/diary";
 
 

@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { AttachFileButton, AttachFileInput, Form, SubmitBtn, TextArea } from "../components/home-component";
+import { AttachFileButton, AttachFileInput, Form, SubmitBtn, TextArea } from "./board-component";
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { deleteField, doc, getDoc, updateDoc } from "firebase/firestore";
-import {  db, storage } from "../firebase";
+import {  db, storage } from "../../firebase";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
-import { Error } from "../components/auth-components";
+import { Error } from "../auth-components";
 
 
 const Photo = styled.img`

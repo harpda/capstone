@@ -25,7 +25,7 @@ export default function Chat() {
     // 컴포넌트가 마운트될 때 한 번만 실행되며, "시작" 메시지를 서버에 보냅니다.
 
     useEffect(() => {
-        const newSocket = io('http://localhost:5000');
+        const newSocket = io('http://localhost:4800');
         setSocket(newSocket);
     }, []);
 
